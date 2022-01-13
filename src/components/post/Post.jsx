@@ -3,6 +3,8 @@ import { MoreVert } from '@material-ui/icons';
 import { Users } from '../../dummyData';
 import { useState } from 'react';
 const Post = ({ post }) => {
+	const PF = process.env.REACT_APP_PUBLIC_FOLDER
+	console.log(`${PF+post.photo}`)
 	const [like, setLike] = useState(post.like);
 	const [isLiked, setIsLiked] = useState(false);
 
@@ -37,7 +39,7 @@ const Post = ({ post }) => {
 				</div>
 				<div className='post-center'>
 					<span className='post-text'>{post?.desc}</span>
-					<img className='post-img' src={post.photo} alt='' />
+					<img className='post-img' src={`${PF+post.photo}`}alt='' />
 				</div>
 				<div className='post-bottom'>
 					<div className='post-bottom-left'>

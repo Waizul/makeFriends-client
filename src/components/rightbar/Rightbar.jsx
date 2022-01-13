@@ -2,6 +2,7 @@ import './rightbar.css';
 import { Users } from '../../dummyData';
 import Online from '../online/Online';
 const HomeRightbar = () => {
+	
 	return (
 		<>
 			<div className='birthday-container'>
@@ -22,6 +23,7 @@ const HomeRightbar = () => {
 	);
 };
 const ProfileRightbar = () => {
+	const PF = process.env.REACT_APP_PUBLIC_FOLDER
 	return (
 		<>
 			<h4 className='rightbar-title'>User information</h4>
@@ -43,7 +45,7 @@ const ProfileRightbar = () => {
 			<div className='rightbar-followings'>
 				<div className='rightbar-following'>
 					<img
-						src='assets/person/1.jpeg'
+						src={`${PF}person/1.jpeg`}
 						alt=''
 						className='rightbar-following-img'
 					/>
@@ -51,7 +53,7 @@ const ProfileRightbar = () => {
 				</div>
 				<div className='rightbar-following'>
 					<img
-						src='assets/person/2.jpeg'
+						src={`${PF}person/2.jpeg`}
 						alt=''
 						className='rightbar-following-img'
 					/>
@@ -59,7 +61,7 @@ const ProfileRightbar = () => {
 				</div>
 				<div className='rightbar-following'>
 					<img
-						src='assets/person/3.jpeg'
+						src={`${PF}person/3.jpeg`}
 						alt=''
 						className='rightbar-following-img'
 					/>
@@ -67,7 +69,7 @@ const ProfileRightbar = () => {
 				</div>
 				<div className='rightbar-following'>
 					<img
-						src='assets/person/4.jpeg'
+						src={`${PF}person/4.jpeg`}
 						alt=''
 						className='rightbar-following-img'
 					/>
@@ -75,7 +77,7 @@ const ProfileRightbar = () => {
 				</div>
 				<div className='rightbar-following'>
 					<img
-						src='assets/person/5.jpeg'
+						src={`${PF}person/5.jpeg`}
 						alt=''
 						className='rightbar-following-img'
 					/>
@@ -83,7 +85,7 @@ const ProfileRightbar = () => {
 				</div>
 				<div className='rightbar-following'>
 					<img
-						src='assets/person/6.jpeg'
+						src={`${PF}person/6.jpeg`}
 						alt=''
 						className='rightbar-following-img'
 					/>
