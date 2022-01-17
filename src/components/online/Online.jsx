@@ -1,6 +1,7 @@
 import './online.css';
 const Online = ({ user }) => {
 	const PF = process.env.REACT_APP_PUBLIC_FOLDER
+
 	return (
 		<li className='rightbar-friend'>
 			<div className='rightbar-profile-img-container'>
