@@ -1,10 +1,9 @@
 import './post.css';
-import { MoreVert } from '@material-ui/icons';
-import { Users } from '../../dummyData';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import {format} from 'timeago.js'
 import {Link} from 'react-router-dom'
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 const Post = ({ post }) => {
 	const PF = process.env.REACT_APP_PUBLIC_FOLDER
 	const [user,setUser] = useState([])
@@ -46,7 +45,7 @@ fetchUser()
 						<span className='post-date'>{format(post.createdAt)}</span>
 					</div>
 					<div className='post-top-right'>
-						<MoreVert />
+						<MoreVertIcon />
 					</div>
 				</div>
 				<div className='post-center'>

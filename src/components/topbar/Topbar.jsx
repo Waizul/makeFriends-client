@@ -1,6 +1,10 @@
 import './topbar.css';
-import { Search, Person, Chat, Notifications } from '@material-ui/icons';
+
 import { Link } from 'react-router-dom';
+import SearchIcon from '@mui/icons-material/Search';
+import PersonIcon from '@mui/icons-material/Person';
+import ChatIcon from '@mui/icons-material/Chat';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 const Topbar = () => {
 	return (
 		<div className='topbar-container'>
@@ -11,7 +15,7 @@ const Topbar = () => {
 			</div>
 			<div className='topbar-center'>
 				<div className='searchbar'>
-					<Search className='search-icon' />
+					<SearchIcon className='search-icon' />
 					<input
 						placeholder='Search for friend, post or video'
 						className='search-input'
@@ -25,15 +29,15 @@ const Topbar = () => {
 				</div>
 				<div className='topbar-icons'>
 					<div className='topbar-icon-item'>
-						<Person />
+						<PersonIcon />
 						<span className='topbar-icon-badge'>1</span>
 					</div>
 					<div className='topbar-icon-item'>
-						<Chat />
+						<ChatIcon />
 						<span className='topbar-icon-badge'>2</span>
 					</div>
 					<div className='topbar-icon-item'>
-						<Notifications />
+						<NotificationsIcon />
 						<span className='topbar-icon-badge'>1</span>
 					</div>
 				</div>
