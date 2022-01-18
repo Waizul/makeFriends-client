@@ -15,8 +15,8 @@ console.log(user,isFetching)
 	const handleLogin = e => {
 		e.preventDefault()
 		loginCall({email:email.current.value,password:password.current.value},dispatch)
-console.log(email.current.value,password.current.value)
-	}
+}
+
 	return (
 		<div className='login'>
 			<div className='login-wrapper'>

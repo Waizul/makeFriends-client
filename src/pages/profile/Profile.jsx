@@ -18,7 +18,7 @@ console.log(res)
 setUser(res.data)
 }
 fetchUser()
-	},[])
+	},[username])
 	
 	return (
 		<>
