@@ -37,10 +37,12 @@ const {user } = useContext(AuthContext)
 						<PersonIcon />
 						<span className='topbar-icon-badge'>1</span>
 					</div>
+					<Link to = '/messenger' style={{textDecoration:'none'}}>
 					<div className='topbar-icon-item'>
 						<ChatIcon />
 						<span className='topbar-icon-badge'>2</span>
 					</div>
+						</Link> 
 					<div className='topbar-icon-item'>
 						<NotificationsIcon />
 						<span className='topbar-icon-badge'>1</span>
